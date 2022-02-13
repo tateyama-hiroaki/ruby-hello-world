@@ -8,6 +8,10 @@ jobs:
       - run:
           name: echo # echoという名前で実行する
           command: echo "Hello, world!!"
+      - run:
+          name: minitest # minitestという名前で実行する
+          command: ruby test.rb
+
 workflows: # workflowのバージョンも指定できますが、なくても動きます！
   test_workflow: # workflowの名前
     jobs:
